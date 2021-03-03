@@ -1,0 +1,4 @@
+﻿select * from FacebookData;
+SELECT age,COUNT(userid) from FacebookData GROUP BY age ORDER BY COUNT DESC;
+SELECT DISTINCT userid from FacebookData WHERE gender='female';
+SELECT COUNT(likes) as COUNTLIKES,gender from FacebookData GROUP BY gender ORDER BY COUNTLIKES DESC LIMIT 2;
